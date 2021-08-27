@@ -13,6 +13,10 @@
 		2D3AFE3826D931FA00054EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3AFE3626D931FA00054EBC /* Main.storyboard */; };
 		2D3AFE3A26D931FB00054EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3AFE3926D931FB00054EBC /* Assets.xcassets */; };
 		2D3AFE3D26D931FB00054EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3AFE3B26D931FB00054EBC /* LaunchScreen.storyboard */; };
+		2D3AFE4726D9346D00054EBC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AFE4626D9346D00054EBC /* MainView.swift */; };
+		2D9C736526D9695100EA6929 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9C736426D9695100EA6929 /* Story.swift */; };
+		2D9C736726D96B5400EA6929 /* CreateStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9C736626D96B5400EA6929 /* CreateStory.swift */; };
+		2DC3AA5526D9799300A1976B /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3AA5426D9799300A1976B /* BackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2D3AFE3926D931FB00054EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3AFE3C26D931FB00054EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3AFE3E26D931FB00054EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3AFE4626D9346D00054EBC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2D9C736426D9695100EA6929 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		2D9C736626D96B5400EA6929 /* CreateStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStory.swift; sourceTree = "<group>"; };
+		2DC3AA5426D9799300A1976B /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				2D3AFE3026D931FA00054EBC /* AppDelegate.swift */,
 				2D3AFE3226D931FA00054EBC /* SceneDelegate.swift */,
-				2D3AFE3426D931FA00054EBC /* ViewController.swift */,
-				2D3AFE3626D931FA00054EBC /* Main.storyboard */,
+				2D9C736326D9693000EA6929 /* Model */,
+				2D3AFE4526D9344200054EBC /* View */,
+				2D3AFE4426D9342800054EBC /* Controller */,
 				2D3AFE3926D931FB00054EBC /* Assets.xcassets */,
 				2D3AFE3B26D931FB00054EBC /* LaunchScreen.storyboard */,
 				2D3AFE3E26D931FB00054EBC /* Info.plist */,
 			);
 			path = chooseYourStory;
+			sourceTree = "<group>";
+		};
+		2D3AFE4426D9342800054EBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D3AFE3426D931FA00054EBC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D3AFE4526D9344200054EBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D3AFE3626D931FA00054EBC /* Main.storyboard */,
+				2D3AFE4626D9346D00054EBC /* MainView.swift */,
+				2DC3AA5426D9799300A1976B /* BackgroundImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D9C736326D9693000EA6929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D9C736426D9695100EA6929 /* Story.swift */,
+				2D9C736626D96B5400EA6929 /* CreateStory.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3AFE3526D931FA00054EBC /* ViewController.swift in Sources */,
+				2D9C736726D96B5400EA6929 /* CreateStory.swift in Sources */,
 				2D3AFE3126D931FA00054EBC /* AppDelegate.swift in Sources */,
 				2D3AFE3326D931FA00054EBC /* SceneDelegate.swift in Sources */,
+				2D3AFE4726D9346D00054EBC /* MainView.swift in Sources */,
+				2DC3AA5526D9799300A1976B /* BackgroundImage.swift in Sources */,
+				2D9C736526D9695100EA6929 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
