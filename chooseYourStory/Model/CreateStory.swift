@@ -37,6 +37,11 @@ struct CreateStory {
                 choice1: "The", choice1Destination: 0,
                 choice2: "End", choice2Destination: 0
             ),
+        Story(
+                  title: "You bond with the murderer while crooning verses of 'Can you feel the love tonight'. He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: 'Try the pier.'",
+                  choice1: "The", choice1Destination: 0,
+                  choice2: "End", choice2Destination: 0
+              )
 
     ]
     
@@ -45,13 +50,14 @@ struct CreateStory {
    mutating func checkChoise(_ userAnswer: String) {
         if userAnswer == story[storyNumber].choice1 {
             storyNumber = story[storyNumber].choice1Destination
-        } else {
+        } else if userAnswer == story[storyNumber].choice2 {
             storyNumber = story[storyNumber].choice2Destination
         }
     }
     
     func storyText() -> String {
         return story[storyNumber].title
+        
     }
     
     func choiseOneText() -> String {

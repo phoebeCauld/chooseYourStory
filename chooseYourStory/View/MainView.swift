@@ -8,7 +8,7 @@
 import UIKit
 
 class MainView: UIView {
-    
+    let backgroundImage = BackgroundImage()
     let label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -42,7 +42,7 @@ class MainView: UIView {
     }()
     
     func setupView(_ view: UIView){
-        [label,topButton,bottomButton].forEach{view.addSubview($0)}
+        [backgroundImage.forrestImage,label,topButton,bottomButton].forEach{view.addSubview($0)}
         label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
